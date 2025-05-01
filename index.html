@@ -27,6 +27,8 @@
           .happy-customer{
             width: 50%;
           }
+
+          
           
           .page{
             width: 15%;
@@ -51,6 +53,10 @@
            width: 12%;
            object-fit: contain;
          }
+
+         .w-90{
+            width: 90%;
+          }
       }
 
       @media (min-width: 768px) {
@@ -62,7 +68,19 @@
           border-top: none;
           border-radius: 0%;
         }
+
+        .responsive-block-md{
+          display: none;
+        }
       }
+
+      @media (max-width: 767px) {
+        .responsive-block-sm{
+          display: none;
+        }
+      }
+
+      
 
 
     
@@ -72,7 +90,7 @@
     
     <div class="px-lg-4">
 
-      <div class=" main bg-body-tertiary rounded-4 mx-3 mt-3 ">
+      <div class=" main bg-tertiary rounded-4 mx-3 mt-3 ">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid align-items-center">
       
@@ -120,7 +138,7 @@
         <section>
           <div class="row mt-lg-3 p-lg-5" >
             <div class="col-sm-6 mt-4  ">
-              <div class="card border-0 bg-body-tertiary ">
+              <div class="card border-0 bg-transparent">
                 <div class="card-body ">
                   <h1 style="font-weight: 400;" class="card-title display-5">Want anything to be easy with <span style="font-weight: 700;">LaslesVPN</span>.
                   </h1>
@@ -131,7 +149,7 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card border-0 bg-body-tertiary">
+              <div class="card border-0 bg-transparent">
                 <div class="card-body">
                 
                  <img class=" w-100" src="./images/Illustration 1.png" alt="">
@@ -142,7 +160,7 @@
         </section>
 
         <section>
-          <div class="container mx-lg-5">
+          <div class="container mx-lg-5 w-90 mt-md-5">
             <div class="row justify-content-center rounded-4 p-4 bg-white">
             
               <div class="col-12 col-md-4 px-2">
@@ -186,9 +204,9 @@
         </section>
 
         <section>
-          <div class="row m-md-5 p-md-5 " >
+          <div class="row mx-md-5 p-md-5 " >
             <div class="col-12 col-lg-6">
-              <div class="card border-0 bg-body-tertiary">
+              <div class="card border-0 bg-transparent">
                 <div class="card-body">
                  <img class=" w-100" src="./images/Illustration 2.png" alt="">
                 </div>
@@ -196,7 +214,7 @@
             </div>
 
             <div class="col-12 col-lg-6 mt-4 mb-sm-0 ">
-              <div class="card border-0 bg-body-tertiary">
+              <div class="card border-0 bg-transparent">
                 <div class="card-body">
                   <h1 style="font-weight: 400;" class="card-title display-5">We Provide Many Features You Can Use.
                   </h1>
@@ -273,6 +291,12 @@
                   <div class="mt-auto">
                     <h4 class="pe-5">Free</h4>
                   </div>
+
+                  <div class="mt-3 responsive-block-md">
+                    <button type="button" class="btn btn-outline-danger rounded-4 px-5 border-3 fw-bold">Select</button>
+                  </div>
+
+
                   
                   
                 </div>
@@ -315,6 +339,10 @@
 
                   <div class="mt-auto">
                     <h4 class="mb-0 pe-5">$9 / mo</h4>
+                  </div>
+
+                  <div class="mt-4 responsive-block-md">
+                    <button type="button" class="btn btn-outline-danger rounded-4 px-5 border-3 fw-bold">Select</button>
                   </div>
                   
                   
@@ -363,6 +391,10 @@
                   <div class="mt-auto pt-5">
                     <h4 class="pe-4">$12 / mo</h4>
                   </div>
+
+                  <div class="mt-3 responsive-block-md">
+                    <button type="button" class=" custom-shadow btn btn-danger px-5 rounded-4 fw-bold">Select</button>
+                  </div>
                   
                 </div>
   
@@ -377,7 +409,7 @@
         
       </div>
 
-      <div>
+      <div class="responsive-block-sm">
         <div class="container px-lg-5">
           <div class="row justify-content-between">
             <div class="col-sm-3 col-md-4 col-lg-3 mb-3">
@@ -443,7 +475,7 @@
         </p>
       </div>
 
-      <div class="row justify-content-between p-5">
+      <div class="row justify-content-between p-5 g-1">
         <div class="col-sm-12 col-md-4 col-lg-3 h-100">
           <div class="card p-3  border-danger border-3 mx-2">
             <div class="d-flex justify-content-between">
